@@ -1,0 +1,23 @@
+-- Create a Clothing Store Database
+
+CREATE TABLE 'cute_clothes' (id INTEGER PRIMARY KEY, gender TEXT, tops TEXT, bottoms TEXT, price INTEGER ,size INTEGER);
+
+INSERT INTO cute_clothes VALUES (1,"F","crop_top","mini_skirt",40.00,30);
+INSERT INTO cute_clothes VALUES (2,"M","anime shirt","skinny_jeans",85.00,28);
+INSERT INTO cute_clothes VALUES (3,"F","shirt","jeans",40.00,32);
+INSERT INTO cute_clothes VALUES (4,"M","anime_shirt","jeans",50.00,28);
+INSERT INTO cute_clothes VALUES (5,"M","shirt","pants",25.00,32);
+INSERT INTO cute_clothes VALUES (6,"F","top","skinny_jeans",50.00,27);
+INSERT INTO cute_clothes VALUES (7,"F","anime_shirt","jeans",50.00,32);
+INSERT INTO cute_clothes VALUES (8,"M","crop_top", "mini_skirt",40.00,30);
+INSERT INTO cute_clothes VALUES (9,"F","anime_shirt","mini_skirt",50.00,27);
+INSERT INTO cute_clothes VALUES (10,"M","crop_top","pants",50.00,30);
+INSERT INTO cute_clothes VALUES (11,"F","anime_shirt","pants",40.00,32);
+INSERT INTO cute_clothes VALUES (12,"M","top","jeans",85.00,30);
+INSERT INTO cute_clothes VALUES (13,"F","top","mini_skirt",85.00,27);
+INSERT INTO cute_clothes VALUES (14,"M","crop_top","pants",50.00,28);
+INSERT INTO cute_clothes VALUES (15,"F","anime_shirt","mini_skirt",85.00,32);
+
+-- Display the database order by price
+SELECT * FROM cute_clothes ORDER BY price;
+SELECT "shirts",sum(price) FROM cute_clothes by "shirts";
